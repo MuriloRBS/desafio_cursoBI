@@ -1,7 +1,7 @@
 CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.DIVISAO( 
     Division string,
   `Division Name` string
-);
+)
 COMMENT 'Tabela Divisao'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ';'

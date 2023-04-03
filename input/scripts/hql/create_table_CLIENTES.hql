@@ -11,7 +11,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.CLIENTES(
   `Region Code` string,
   `Regional Sales Mgr` string,
   `Search Type` string
-);
+)
 COMMENT 'Tabela Clientes'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ';'

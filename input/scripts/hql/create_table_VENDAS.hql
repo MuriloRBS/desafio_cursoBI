@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE IF NOT EXISTS desafio.curso.VENDAS (
+CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.VENDAS(
   `Actual Delivery Date` string,
   `CustomerKey` string,
   `DateKey` string,
@@ -21,8 +21,9 @@ CREATE EXTERNAL TABLE IF NOT EXISTS desafio.curso.VENDAS (
   `Sales Rep` string,
   `U/M` string
 )
+COMMENT 'Tabela VENDAS'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ';'
+STORED AS TEXTFILE
 LOCATION '/datalake/raw/VENDAS'
-TBLPROPERTIES ("skip.header.line.count"="1")
-COMMENT 'Tabela VENDAS';
+TBLPROPERTIES ("skip.header.line.count"="1");

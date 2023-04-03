@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE IF NOT EXISTS desafio.curso.ENDERECO (
+CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.ENDERECO(
   `Address Number` string,
   `City` string,
   `Country` string,
@@ -12,5 +12,6 @@ CREATE EXTERNAL TABLE IF NOT EXISTS desafio.curso.ENDERECO (
 COMMENT 'Tabela Endereco'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ';'
+STORED AS TEXTFILE
 LOCATION '/datalake/raw/ENDERECO'
 TBLPROPERTIES ("skip.header.line.count"="1");
