@@ -37,7 +37,7 @@ Foi proposto neste desafio uma pipeline de ingestão de dados, utilizando Hive, 
 **Etapa 3** - Processamento dos dados no Spark
      Utilizando o spark, os dados foram tratados e processados, dentro de dataframes que buscam os dados diretamente do Hive Server.
      Os dados de todas as tabelas foram armazenados em um único dataframe com o nome df_stage, para que fosse facilitada a criação da tabela fato e suas dimensões.
-     Todo o código deste processo descrito está armazenado no arquivo process.py dentro da pasta input/scripts/process e lá contendo mais detalhes do processo realizado junto a seus códigos
+     Todo o código deste processo descrito está armazenado no arquivo process.py dentro da pasta input/scripts/process e lá contendo mais detalhes do processo realizado junto a seus códigos.
 
 **Etapa 4** - Armazenamento das informações na tabela fato e suas dimensões
     
