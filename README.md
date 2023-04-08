@@ -13,7 +13,7 @@ O Objetivo do trabalho foi atingido, que era basicamente prover dados em uma pas
 
 📑 ETAPAS DO DESAFIO
 Etapa 1 - Envio dos arquivos para o HDFS
-     Foi criado um shell script dentro da pasta [input/scripts/pre_process] que automatiza a criação do ambiente no HDFS, assim criando as pastas datalake e raw.
+     Foi criado um shell script dentro da pasta input/scripts/pre_process que automatiza a criação do ambiente no HDFS, assim criando as pastas datalake e raw.
      Após isso o código copia os CSVs para o ambiente do HDFS em pastas com o mesmo nome do arquivo em si.
 
 Etapa 2 - Criação do banco DESAFIO_CURSO dentro do Hive Server Criar o banco DEASFIO_CURSO e dentro tabelas no Hive usando o HQL e executando um script shell dentro do hive server na pasta scripts/pre_process.
@@ -30,7 +30,7 @@ Etapa 2 - Criação do banco DESAFIO_CURSO dentro do Hive Server Criar o banco D
 Etapa 3 - Processamento dos dados no Spark
      Utilizando o spark, os dados foram tratados e processados, dentro de dataframes que buscam os dados diretamente do Hive Server.
      Os dados de todas as tabelas foram armazenados em um único dataframe com o nome df_stage, para que fosse facilitada a criação da tabela fato e suas dimensões.
-     Todo o código deste processo descrito está armazenado no arquivo [input/scripts/pre_process/process.py](Teste) dentro da pasta [input/scripts/process] e lá contendo mais detalhes do processo realizado junto a seus códigos
+     Todo o código deste processo descrito está armazenado no arquivo process.py dentro da pasta input/scripts/process e lá contendo mais detalhes do processo realizado junto a seus códigos
 
 Etapa 4 - Armazenamento das informações na tabela fato e suas dimensões
      Como descrito na etapa anterior, os dados trataram foram colocados na fato vendas e suas dimensões(Clientes, Tempo e Local) como é possível ver na estrutura abaixo:
