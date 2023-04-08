@@ -1,7 +1,6 @@
 # Importando todas as funções que serão usadas no código abaixo
 from pyspark.sql import SparkSession, dataframe
 from pyspark.sql.functions import trim
-from pyspark.sql.functions import when, col
 from pyspark.sql.functions import when, col, sum, count, isnan, round
 from pyspark.sql.functions import regexp_replace, concat_ws, sha2, rtrim, substring
 from pyspark.sql.functions import unix_timestamp, from_unixtime, to_date
