@@ -18,6 +18,7 @@ Etapa 1 - Envio dos arquivos para o HDFS
 
 Etapa 2 - Criação do banco DESAFIO_CURSO dentro do Hive Server Criar o banco DEASFIO_CURSO e dentro tabelas no Hive usando o HQL e executando um script shell dentro do hive server na pasta scripts/pre_process.
      Nesta etapa foi apenas executado o shell script criado na etapa anterior, que cria o database desafio_curso dentro do Hive Server e as tabelas baseadas nos CSVs, seguindo essa estrtutura abaixo:
+     
     - DESAFIO_CURSO 
         - TBL_VENDAS
         - TBL_CLIENTES
