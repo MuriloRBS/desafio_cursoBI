@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.REGIAO(
+CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.TBL_REGIAO(
   `Region Code` string,
   `Region Name` string
 )

@@ -1,4 +1,4 @@
-CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.ENDERECO(
+CREATE EXTERNAL TABLE IF NOT EXISTS desafio_curso.TBL_ENDERECO(
   `Address Number` string,
   `City` string,
   `Country` string,
