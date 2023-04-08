@@ -34,7 +34,8 @@ Etapa 3 - Processamento dos dados no Spark
      Todo o código deste processo descrito está armazenado no arquivo process.py dentro da pasta input/scripts/process e lá contendo mais detalhes do processo realizado junto a seus códigos
 
 Etapa 4 - Armazenamento das informações na tabela fato e suas dimensões
-     Como descrito na etapa anterior, os dados trataram foram colocados na fato vendas e suas dimensões(Clientes, Tempo e Local) como é possível ver na estrutura abaixo:
+    
+    Como descrito na etapa anterior, os dados trataram foram colocados na fato vendas e suas dimensões(Clientes, Tempo e Local) como é possível ver na estrutura abaixo:
 
         - FT_VENDAS
         - DIM_CLIENTES
