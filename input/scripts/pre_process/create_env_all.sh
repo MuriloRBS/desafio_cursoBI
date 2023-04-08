@@ -4,6 +4,14 @@
 
 DADOS=("CLIENTES" "DIVISAO" "ENDERECO" "REGIAO" "VENDAS")
 
+#Criação das pastas Datalake e Raw usando o HDFS
+echo "Criando a pasta /datalake"
+hdfs dfs -mkdir /datalake/
+echo "Criando a pasta /datalake/raw"
+hdfs dfs -mkdir /datalake/raw
+
+# Loop para criar as pastas dos CSVs usando HDFS, copiar os CSV para as devidas pastas
+# e criar as tabelas usando o beeline, usando os dados dos CSV e os scripts de criação da pasta HQL
 for i in "${DADOS[@]}"
 do
 	echo "$i"
