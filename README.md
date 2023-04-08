@@ -25,8 +25,8 @@ Etapa 2 - Criação do banco DESAFIO_CURSO dentro do Hive Server Criar o banco D
         - TBL_CLIENTES
         - TBL_ENDERECO
         - TBL_REGIAO
-        - TBL_DIVISAO
-    As tabelas foram criadas a partir do shell script, que dentro de seu loop utiliza os arquivos HQL presentes na pasta input/scripts/hql 
+        - TBL_DIVISAO  
+   As tabelas foram criadas a partir do shell script, que dentro de seu loop utiliza os arquivos HQL presentes na pasta input/scripts/hql 
 
 Etapa 3 - Processamento dos dados no Spark
      Utilizando o spark, os dados foram tratados e processados, dentro de dataframes que buscam os dados diretamente do Hive Server.
