@@ -12,6 +12,7 @@ Neste desafio foram feitas as ingestões dos dados que estão na pasta /raw onde
 O Objetivo do trabalho foi atingido, que era basicamente prover dados em uma pasta desafio_curso/gold em .csv para ser consumido por um relatório em PowerBI dentro da pasta 'app'
 
 📑 ETAPAS DO DESAFIO
+
 Etapa 1 - Envio dos arquivos para o HDFS
      Foi criado um shell script dentro da pasta input/scripts/pre_process que automatiza a criação do ambiente no HDFS, assim criando as pastas datalake e raw.
      Após isso o código copia os CSVs para o ambiente do HDFS em pastas com o mesmo nome do arquivo em si.
