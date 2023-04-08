@@ -44,3 +44,4 @@ Etapa 4 - Armazenamento das informações na tabela fato e suas dimensões
 Etapa 5 - Exportação dos dados para a pasta input/gold
      A exportação dos dados presentes na tabela fato e suas dimensões foram exportados para arquivos CSVs para a pasta input/gold, código também presente no arquivo process.py
 
+Última etapa - Criação de gráficos no Power BI a partir dos dados salvos na pasta Gold. Estes gráficos estão salvos no arquivo Proj_Vendas.pbix na pasta input/app
