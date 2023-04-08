@@ -79,11 +79,10 @@ dim_clientes = spark.sql("""
         `Business Family`,
         `Regional Sales Mgr`,
         Phone,
-        Division,
-        `Address Number`  
-   
+        Division
+       
    FROM stage
-""")
+""").dropDuplicates()
 
 
 dim_local = spark.sql('''
@@ -101,7 +100,7 @@ dim_local = spark.sql('''
         `Zip Code`
         
     FROM stage
-''')
+''').dropDuplicates()
 
 dim_tempo = spark.sql('''
     SELECT DISTINCT
@@ -112,7 +111,7 @@ dim_tempo = spark.sql('''
         `Promised Delivery Date`
     FROM
         stage
-''')
+''').dropDuplicates()
 
 # Função para salvar os dados na pasta input/gold
 def salvar_df(df, file):
