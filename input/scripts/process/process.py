@@ -88,6 +88,7 @@ dim_local = spark.sql('''
     SELECT DISTINCT
         pk_local,
         `Region Code`,
+        `Region Name`,
         `Address Number`,
         City,
         Country,
